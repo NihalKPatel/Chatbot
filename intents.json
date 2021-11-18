@@ -1,30 +1,29 @@
 {
   "intents": [
     {
-      "tag": "greeting",
+      "tag": "qualifications",
       "patterns": [
-        "Hi",
-        "How are you",
-        "Is anyone there?",
-        "Hello",
-        "Good day",
+        "qualifications",
+        "what is your degree",
+        "Academic Experience",
+        "what have you studied",
+        "University",
         "Whats up"
       ],
       "responses": [
-        "Hello!",
-        "Good to see you again!",
-        "Hi there, how can I help?"
+        "Software Engineering!"
       ],
       "context_set": ""
     },
     {
-      "tag": "goodbye",
+      "tag": "Experience",
       "patterns": [
         "cya",
         "See you later",
         "Goodbye",
         "I am Leaving",
-        "Have a Good day"
+        "Have a Good day",
+        "Fuck off"
       ],
       "responses": [
         "Sad to see you go :(",
@@ -37,7 +36,6 @@
       "tag": "age",
       "patterns": [
         "how old",
-        "how old is tim",
         "what is your age",
         "how old are you",
         "age?"
@@ -53,38 +51,12 @@
       "patterns": [
         "what is your name",
         "what should I call you",
-        "whats your name?"
+        "whats your name?",
+        "name"
       ],
       "responses": [
-        "You can call me Tim.",
-        "I'm Tim!",
-        "I'm Tim aka Tech With Tim."
-      ],
-      "context_set": ""
-    },
-    {
-      "tag": "shop",
-      "patterns": [
-        "Id like to buy something",
-        "whats on the menu",
-        "what do you reccommend?",
-        "could i get something to eat"
-      ],
-      "responses": [
-        "We sell chocolate chip cookies for $2!",
-        "Cookies are on the menu!"
-      ],
-      "context_set": ""
-    },
-    {
-      "tag": "hours",
-      "patterns": [
-        "when are you guys open",
-        "what are your hours",
-        "hours of operation"
-      ],
-      "responses": [
-        "We are open 7am-4pm Monday-Friday!"
+        "You can call me bot.",
+        "I'm a bot!"
       ],
       "context_set": ""
     }

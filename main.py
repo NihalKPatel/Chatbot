@@ -2,10 +2,9 @@ import json
 import nltk
 import numpy
 import random
-from tensorflow.python.framework import ops
 import tflearn
 import pickle
-
+from tensorflow.python.framework import ops
 from nltk.stem.lancaster import LancasterStemmer
 
 nltk.download('punkt')
@@ -60,7 +59,6 @@ except:
         training.append(bag)
         output.append(output_row)
 
-
     training = numpy.array(training)
     output = numpy.array(output)
 
@@ -85,6 +83,7 @@ except:
     model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
     model.save("model.tflearn")
 
+
 def bag_of_words(s, words):
     bag = [0 for _ in range(len(words))]
 
@@ -100,7 +99,8 @@ def bag_of_words(s, words):
 
 
 def chat():
-    print("Start talking with the bot (type quit to stop)!")
+    print("What would you like to know, Ask Anything :)\n"
+          "My CV - https://nihalkpatel.com/static/media/CV.54cb0d69.pdf")
     while True:
         inp = input("You: ")
         if inp.lower() == "quit":
@@ -110,7 +110,7 @@ def chat():
         results_index = numpy.argmax(results)
         tag = labels[results_index]
 
-        if (results[results_index] > 0.7):
+        if results[results_index] > 0.7:
             for tg in data["intents"]:
                 if tg['tag'] == tag:
                     responses = tg['responses']
@@ -118,5 +118,6 @@ def chat():
             print(random.choice(responses))
         else:
             print("I'm not sure about that. Try again.")
+
 
 chat()
