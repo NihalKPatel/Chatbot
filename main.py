@@ -1,11 +1,12 @@
 import json
+import pickle
+import random
+
 import nltk
 import numpy
-import random
 import tflearn
-import pickle
-from tensorflow.python.framework import ops
 from nltk.stem.lancaster import LancasterStemmer
+from tensorflow.python.framework import ops
 
 nltk.download('punkt')
 stemmer = LancasterStemmer()

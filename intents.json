@@ -41,8 +41,7 @@
         "age?"
       ],
       "responses": [
-        "I am 18 years old!",
-        "18 years young!"
+        "I am 21 years old!"
       ],
       "context_set": ""
     },
@@ -55,8 +54,8 @@
         "name"
       ],
       "responses": [
-        "You can call me bot.",
-        "I'm a bot!"
+        "You can call me Nihal Patel.",
+        "I'm a Nihal Patel!"
       ],
       "context_set": ""
     }
